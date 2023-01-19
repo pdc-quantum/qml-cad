@@ -6,13 +6,15 @@ These notebooks explore the metrics obtained by classical and quantum support ve
 
 Two versions: the eleven features regularly tested in classical ML and the eight features exhibiting the best correlation with the label CAD / NoCAD
 
-The dataset was obtained directly from: https://archive.ics.uci.edu/ml/datasets/heart+Disease, using this program: https://github.com/SpiroGanas/Heart-Disease-Machine-Learning/blob/master/load_heart_disease_data.py
+The dataset was obtained  from: https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 
-It differs therefore slightly from the dataset used for the paper. Missing data treatment and data transformation is also somewhat different.
+Absurd values of 0.0 for cholesterol and for blood pressure were replaced by the mean of the correct values
 
-11 feature set: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope']
+11 feature set: ['age', 'sex', 'chest pain type','resting bp s','cholesterol','fasting blood sugar',
+                 'resting ecg','max heart rate','exercise angina', 'oldpeak', 'ST slope'] 
 
-8 feature sets : ['age', 'sex', 'cp', 'fbs', 'thalach', 'exang', 'oldpeak', 'slope']
+8 feature sets : ['age', 'sex', 'chest pain type','fasting blood sugar',
+                 'max heart rate','exercise angina', 'oldpeak', 'ST slope'] 
 
 The feature drop is on basis of poor correlation with the condition. The chol variable is the weakest one, with many missing or absurdly 0.0 values.
 
