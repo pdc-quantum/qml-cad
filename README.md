@@ -16,13 +16,13 @@ Absurd values of 0.0 for cholesterol and for blood pressure were replaced by the
 8 feature sets : ['age', 'sex', 'chest pain type','fasting blood sugar',
                  'max heart rate','exercise angina', 'oldpeak', 'ST slope'] 
 
-The feature drop is on basis of poor correlation with the condition. The chol variable is the weakest one, with many missing or absurdly 0.0 values.
+The feature drop is on basis of poor correlation with the target. 
 
-A side by side review of the two notebooks shows no real difference in the metrics for the eight and eleven feature sets. 
+No difference in the metrics is observed for the eleven feature set between classical and quantum SVM. However, the accuracy is stastically significantly lower quantum SVM when 8 features are used.
 
-Therefore, it's probably a good option to stick to the eleven feature set in order to remain in line with previous publications using classical ML. 
+Therefore, it's probably best option to stick to the eleven feature set in order to remain in line with previous publications using classical ML. 
 
-However, the eight feature set remains an option, if the depth of the quantum circuit significantly affects the metrics in noisy quantum simulations or hardware experiments.
+However, the eight feature set can be considered if the depth of the quantum circuit significantly affects the metrics in noisy quantum simulations or hardware experiments.
 
 ### References
 
