@@ -22,3 +22,14 @@ Therefore, it's probably a good option to stick to the eleven feature set in ord
 
 However, the eight features set remains an option, if the depth of the quantum circuit significantly affects the metrics in quantum simulatiosn or hardware experiments with noise with noise 
 
+### References
+
+Impact of train/test sample regimen on performance estimate stability of machine learning in cardiovascular imaging
+
+https://www.nature.com/articles/s41598-021-93651-5#Tab3
+
+2021 AHA/ACC/ASE/CHEST/SAEM/
+SCCT/SCMR Guideline for the
+Evaluation and Diagnosis of Chest Pain:
+
+https://www.jacc.org/doi/pdf/10.1016/j.jacc.2021.07.053?_ga=2.85562654.649136116.1674121202-7665523.1671358677
