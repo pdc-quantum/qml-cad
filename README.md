@@ -10,7 +10,7 @@ The dataset was obtained directly from: https://archive.ics.uci.edu/ml/datasets/
 
 It differs therefore slightly from the dataset used for the paper. Missing data treatment and data transformation is also somewhat different.
 
-11 features set: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope']
+11 feature set: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope']
 
 8 feature sets : ['age', 'sex', 'cp', 'fbs', 'thalach', 'exang', 'oldpeak', 'slope']
 
