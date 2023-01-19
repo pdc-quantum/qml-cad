@@ -20,7 +20,7 @@ A side by side review of the two notebooks shows no real difference in the metri
 
 Therefore, it's probably a good option to stick to the eleven feature set in order to remain in line with previous publications using classical ML. 
 
-However, the eight features set remains an option, if the depth of the quantum circuit significantly affects the metrics in quantum simulatiosn or hardware experiments with noise with noise 
+However, the eight features set remains an option, if the depth of the quantum circuit significantly affects the metrics in noisy quantum simulations or hardware experiments.
 
 ### References
 
