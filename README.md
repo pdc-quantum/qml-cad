@@ -8,7 +8,7 @@ Two versions: the eleven feature regularly tested in classical ML and the eight 
 
 The dataset was obtained  from: https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 
-Absurd values of 0.0 for cholesterol and for blood pressure were replaced by the mean of the correct values
+Absurd values of 0.0 for cholesterol and for blood pressure underwent mean substitution, because we are sure that these are missing values (more sophisticated methods for missing data can of course be contemplated).
 
 11 feature set: ['age', 'sex', 'chest pain type','resting bp s','cholesterol','fasting blood sugar',
                  'resting ecg','max heart rate','exercise angina', 'oldpeak', 'ST slope'] 
@@ -23,6 +23,13 @@ No difference in the metrics is observed for the eleven feature set between clas
 Therefore, it's probably best option to stick to the eleven feature set in order to remain in line with previous publications using classical ML. 
 
 However, the eight feature set can be considered if the depth of the quantum circuit significantly affects the metrics in noisy quantum simulations or hardware experiments.
+
+NOTE: For the eleven feature dataset, the ECG at rest has values 0, 1 and 2. ST-T abnormality (Value 1) has a priori a higher correlation with coronary artery disease than left ventricular hypertrophy (Value 2). Value 0 is for normal ECG. Therefore I looked at the correlation in the data That confirmed the a priori expectation. This leads to a proposal to recode the attribute: 1 for left ventricular hypertrophy and 2 for ST-T abnormality. The notebook recoding_resting_ecg shows that the AUC score is then better, with a value of 0.90 for classical _and_ quantum SVM.
+
+ROC curve after recoding the resting_ecg attribute:
+
+![image](https://user-images.githubusercontent.com/29145045/213746071-f1610960-bcdd-411e-a674-6da638fb257d.png)
+
 
 ### References
 
