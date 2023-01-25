@@ -8,7 +8,7 @@
 
 ![image](https://user-images.githubusercontent.com/29145045/214704051-3f298986-47dc-4aa7-91d8-44d091252721.png)
 
--  No encoding modification appears necessary fo the resting ECG feature for SVM models
+-  No encoding modification appears necessary fo the resting ECG feature in SVM models
 
 
 ### Previous notebooks
