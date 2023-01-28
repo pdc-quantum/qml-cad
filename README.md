@@ -13,9 +13,11 @@
 
 ### Previous notebooks
 
-The previous other notebooks explore the metrics obtained by classical and quantum support vector machine with different random seeds for the partition into training and test sets.
+The previous other notebooks explore the metrics obtained by classical and quantum support vector machine with different random states for the partition into training and test sets.
 
 Two versions: the eleven feature regularly tested in classical ML and the eight feature exhibiting the best correlation with the label CAD / NoCAD
+
+These notebooks were edited on end january 2022. The random state set is know made of the 100 first prime numbers. They include now 11-qubit SVM version for 11 features and 8-qubit SVM version for 8 features, in addition to the 4-qubits SVM. 
 
 The dataset was obtained  from: https://ieee-dataport.org/open-access/heart-disease-dataset-comprehensive
 
@@ -27,15 +29,18 @@ Absurd values of 0.0 for cholesterol and for blood pressure underwent mean subst
 8 feature sets : ['age', 'sex', 'chest pain type','fasting blood sugar',
                  'max heart rate','exercise angina', 'oldpeak', 'ST slope'] 
 
-The feature drop is on basis of poor correlation with the target. 
+The feature drop is on basis of poor correlation with the target.
 
-No significant difference in the accuracy is observed for the eleven feature set between classical and quantum SVM. However, the accuracy is stastically significantly lower for quantum SVM when 8 features are used.
+For comparing the metrics in classical, 4-qubit and 8 or 11-qubit SVM, a random state giving AUC scores approximating the mean AUC for the compared methods was chosen.
+
+The main finding is that the better metrics are observed for the 11-qbit SVM on the 11 feature dataset.
+
+![image](https://user-images.githubusercontent.com/29145045/215255809-1b6aa076-098c-4f86-b676-295ab92e9c7e.png)
 
 Therefore, it's probably best option to stick to the eleven feature set in order to remain in line with previous publications using classical ML. 
 
 However, the eight feature set can be considered if the depth of the quantum circuit significantly affects the metrics in noisy quantum simulations or hardware experiments.
 
-NOTE: For the eleven feature dataset, the ECG at rest has values 0, 1 and 2. ST-T abnormality (Value 1) has a priori a higher correlation with coronary artery disease than left ventricular hypertrophy (Value 2). Value 0 is for normal ECG. Therefore I looked at the correlation in the data That confirmed the a priori expectation. This leads to a proposal to recode the attribute: 1 for left ventricular hypertrophy and 2 for ST-T abnormality. The notebook recoding_resting_ecg shows that the AUC score is then better, with a value of 0.90 for classical _and_ quantum SVM. The accuracy remains 0.83 for classical and quantum SVM.
 
 ### References
 
