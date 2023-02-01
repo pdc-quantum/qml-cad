@@ -33,7 +33,7 @@ The feature drop is on basis of poor correlation with the target.
 
 For comparing the metrics in classical, 4-qubit and 8 or 11-qubit SVM, a random state giving AUC scores approximating the mean AUC for the compared methods was chosen.
 
-The main finding is that the better metrics are observed for the 11-qbit SVM on the 11 feature dataset.
+The main finding is that the best metrics are observed for the 11-qbit SVM on the 11 feature dataset.
 
 ![image](https://user-images.githubusercontent.com/29145045/215255809-1b6aa076-098c-4f86-b676-295ab92e9c7e.png)
 
